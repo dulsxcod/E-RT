@@ -26,6 +26,7 @@
         </div>
     </main>
     @include('SuperAdmin.partials.bottomnav')
+    @stack('scripts')
 </body>
 
 </html>

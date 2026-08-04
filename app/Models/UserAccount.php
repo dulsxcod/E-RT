@@ -17,6 +17,8 @@ class UserAccount extends Authenticatable
     protected $fillable = [
         'Username',
         'Password',
+        'NamaLengkap',
+        'Foto',
         'Token',
         'Role',
     ];

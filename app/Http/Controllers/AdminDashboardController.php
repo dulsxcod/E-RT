@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\View\View;
+
+class AdminDashboardController extends Controller
+{
+    public function index(): View
+    {
+        return view('SuperAdmin.dashboard', [
+            'user' => auth()->user(),
+        ]);
+    }
+}

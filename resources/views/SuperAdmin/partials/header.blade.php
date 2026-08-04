@@ -4,8 +4,7 @@
     <div class="flex items-center gap-3">
         <div class="md:hidden">
             <img class="w-10 h-10 rounded-full bg-surface-variant"
-                data-alt="A small, circular avatar placeholder image showing a generic user silhouette in a minimalist, light gray tone against a white background. Clean, smooth vectors, high resolution."
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDswJVHfUHZjcWUgtS9BaXDdcAphb9esi0B6GeWYFYfQ2--np0tHUW18CsGpm3iKi-yKfCi9lWVb4ZMWPr3oYf9WiPsE4rmOjep01SrHCA-lTkFZlEil8135lEWuwd8aZqioSHUhZP5GmKCHg05z9gQ6a-rTeByFMTtk5WMH157KnrTRBpWiJC5Jao_5wOv3V1egYDhucur5TWfXRcMciNfWuKH6EipG0vko3p-QE1DT8Q-OGLzG-uzDQ" />
+                src="{{ auth()->user()->Foto ? asset('storage/' . auth()->user()->Foto) : 'https://lh3.googleusercontent.com/aida-public/AB6AXuDswJVHfUHZjcWUgtS9BaXDdcAphb9esi0B6GeWYFYfQ2--np0tHUW18CsGpm3iKi-yKfCi9lWVb4ZMWPr3oYf9WiPsE4rmOjep01SrHCA-lTkFZlEil8135lEWuwd8aZqioSHUhZP5GmKCHg05z9gQ6a-rTeByFMTtk5WMH157KnrTRBpWiJC5Jao_5wOv3V1egYDhucur5TWfXRcMciNfWuKH6EipG0vko3p-QE1DT8Q-OGLzG-uzDQ' }}" />
         </div>
         <h1 class="font-headline-md text-headline-md font-bold text-primary">Manajemen Warga</h1>
     </div>
