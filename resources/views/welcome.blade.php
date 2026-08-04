@@ -11,7 +11,7 @@
     <link href="{{ asset('css/welcome.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/icons.css') }}" rel="stylesheet" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&amp;family=Inter:wght@400;600&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
         rel="stylesheet" />
 </head>
 

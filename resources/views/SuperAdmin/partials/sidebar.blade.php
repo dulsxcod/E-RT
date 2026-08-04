@@ -29,6 +29,11 @@
         <div class="hidden group-hover:block mt-1 ml-4 pl-3 border-l border-outline-variant space-y-1">
             <a class="flex items-center gap-3 px-3 py-2.5 text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all duration-200 rounded-lg"
                 href="#">
+                <span class="material-symbols-outlined text-base">manage_accounts</span>
+                <span class="font-body-sm text-body-sm">Data User</span>
+            </a>
+            <a class="flex items-center gap-3 px-3 py-2.5 text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all duration-200 rounded-lg"
+                href="#">
                 <span class="material-symbols-outlined text-base">groups</span>
                 <span class="font-body-sm text-body-sm">Data Warga</span>
             </a>

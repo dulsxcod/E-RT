@@ -66,22 +66,22 @@ tailwind.config = {
       },
       "fontFamily": {
               "headline-md": [
-                      "Geist", "sans-serif"
+                      "Poppins", "sans-serif"
               ],
               "body-sm": [
-                      "Inter", "sans-serif"
+                      "Poppins", "sans-serif"
               ],
               "headline-lg-mobile": [
-                      "Geist", "sans-serif"
+                      "Poppins", "sans-serif"
               ],
               "headline-lg": [
-                      "Geist", "sans-serif"
+                      "Poppins", "sans-serif"
               ],
               "body-lg": [
-                      "Inter", "sans-serif"
+                      "Poppins", "sans-serif"
               ],
               "label-caps": [
-                      "Geist", "sans-serif"
+                      "Poppins", "sans-serif"
               ]
       },
       "fontSize": {
