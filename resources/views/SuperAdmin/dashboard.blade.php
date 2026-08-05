@@ -62,30 +62,32 @@
                 class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 shadow-sm border-t-4 border-t-primary">
                 <div class="flex justify-between items-center mb-6">
                     <h3 class="font-headline-md text-headline-md text-on-surface">Manajemen Pengguna</h3>
-                    <button
-                        class="bg-primary text-on-primary px-4 py-2 rounded-lg font-body-sm flex items-center gap-2 hover:bg-primary/90 transition-colors">
+                    <a href="{{ route('super_admin.warga.create') }}"
+                        class="bg-primary text-on-primary px-4 py-2 rounded-lg font-body-sm flex items-center gap-2 hover:bg-primary/90 transition-colors w-fit">
                         <span class="material-symbols-outlined text-sm">add</span> Tambah Warga
-                    </button>
+                    </a>
                 </div>
                 <div class="flex gap-4">
                     <div
-                        class="flex-1 bg-surface-container p-4 rounded-lg flex items-center gap-3 border border-outline-variant/30 hover:border-primary/50 cursor-pointer transition-colors">
+                        class="flex-1 bg-surface-container p-4 rounded-lg flex items-center gap-3 border border-outline-variant/30 hover:border-primary/50 cursor-pointer transition-colors"
+                        onclick="window.location.href='{{ route('super_admin.warga') }}'">
                         <div class="bg-primary-container text-on-primary-container p-2 rounded-full flex">
                             <span class="material-symbols-outlined">edit_document</span>
                         </div>
                         <div>
-                            <h4 class="font-body-lg font-semibold text-on-surface">Edit Data Massal</h4>
-                            <p class="font-body-sm text-on-surface-variant">Perbarui status kepengurusan.</p>
+                            <h4 class="font-body-lg font-semibold text-on-surface">Data Warga</h4>
+                            <p class="font-body-sm text-on-surface-variant">Kelola data dan akun warga.</p>
                         </div>
                     </div>
                     <div
-                        class="flex-1 bg-surface-container p-4 rounded-lg flex items-center gap-3 border border-outline-variant/30 hover:border-primary/50 cursor-pointer transition-colors">
+                        class="flex-1 bg-surface-container p-4 rounded-lg flex items-center gap-3 border border-outline-variant/30 hover:border-primary/50 cursor-pointer transition-colors"
+                        onclick="window.location.href='{{ route('super_admin.warga.pending') }}'">
                         <div class="bg-secondary-container text-on-secondary-container p-2 rounded-full flex">
                             <span class="material-symbols-outlined">how_to_reg</span>
                         </div>
                         <div>
-                            <h4 class="font-body-lg font-semibold text-on-surface">Verifikasi Akun</h4>
-                            <p class="font-body-sm text-on-surface-variant">5 antrean tertunda.</p>
+                            <h4 class="font-body-lg font-semibold text-on-surface">Verifikasi Warga</h4>
+                            <p class="font-body-sm text-on-surface-variant">Akun pending menunggu aktivasi.</p>
                         </div>
                     </div>
                 </div>

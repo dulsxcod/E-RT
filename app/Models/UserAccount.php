@@ -21,6 +21,7 @@ class UserAccount extends Authenticatable
         'Foto',
         'Token',
         'Role',
+        'status',
     ];
 
     protected $hidden = [

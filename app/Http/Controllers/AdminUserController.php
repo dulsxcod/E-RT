@@ -35,6 +35,7 @@ class AdminUserController extends Controller
             'Foto' => ['nullable', 'string', 'max:255'],
             'Token' => ['nullable', 'string', 'max:255'],
             'Role' => ['required', 'string', 'in:' . implode(',', array_keys(UserAccount::ROLE_SLUGS))],
+            'status' => ['required', 'string', 'in:active,pending'],
         ]);
 
         UserAccount::create([
@@ -44,6 +45,7 @@ class AdminUserController extends Controller
             'Foto' => $validated['Foto'] ?? null,
             'Token' => $validated['Token'] ?? null,
             'Role' => $validated['Role'],
+            'status' => $validated['status'],
         ]);
 
         return back()->with('success', 'User berhasil ditambahkan.');
@@ -58,6 +60,7 @@ class AdminUserController extends Controller
             'Foto' => ['nullable', 'string', 'max:255'],
             'Token' => ['nullable', 'string', 'max:255'],
             'Role' => ['required', 'string', 'in:' . implode(',', array_keys(UserAccount::ROLE_SLUGS))],
+            'status' => ['required', 'string', 'in:active,pending'],
         ]);
 
         $data = [
@@ -66,6 +69,7 @@ class AdminUserController extends Controller
             'Foto' => $validated['Foto'] ?? null,
             'Token' => $validated['Token'] ?? null,
             'Role' => $validated['Role'],
+            'status' => $validated['status'],
         ];
 
         if (! empty($validated['Password'])) {

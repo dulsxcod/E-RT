@@ -30,20 +30,13 @@
                 <span class="material-symbols-outlined text-base">manage_accounts</span>
                 <span class="font-body-sm text-body-sm">Data User</span>
             </a>
-            <a class="flex items-center gap-3 px-3 py-2.5 text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all duration-200 rounded-lg"
-                href="#">
-                <span class="material-symbols-outlined text-base">maps_home_work</span>
-                <span class="font-body-sm text-body-sm">Data RT</span>
+            <a href="{{ route('super_admin.warga') }}" class="flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 {{ request()->routeIs('super_admin.warga') ? 'bg-primary/10 text-primary font-semibold' : 'text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface' }}">
+                <span class="material-symbols-outlined text-base">group</span>
+                <span class="font-body-sm text-body-sm">Data Warga</span>
             </a>
-            <a class="flex items-center gap-3 px-3 py-2.5 text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all duration-200 rounded-lg"
-                href="#">
-                <span class="material-symbols-outlined text-base">account_balance_wallet</span>
-                <span class="font-body-sm text-body-sm">Data Bendahara</span>
-            </a>
-            <a class="flex items-center gap-3 px-3 py-2.5 text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-all duration-200 rounded-lg"
-                href="#">
-                <span class="material-symbols-outlined text-base">sports_soccer</span>
-                <span class="font-body-sm text-body-sm">Data Ketua Pemuda</span>
+            <a href="{{ route('super_admin.warga.pending') }}" class="flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 {{ request()->routeIs('super_admin.warga.pending') ? 'bg-primary/10 text-primary font-semibold' : 'text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface' }}">
+                <span class="material-symbols-outlined text-base">pending_actions</span>
+                <span class="font-body-sm text-body-sm">Verifikasi Warga</span>
             </a>
         </div>
     </div>
